@@ -1,10 +1,14 @@
-Feature: Serve coffee
-  Coffee should not be served until paid for
-  Coffee should not be served until the button has been pressed
-  If there is no coffee left then money should be refunded
+Feature: Add a movie to Rotten Potatoes
+  As a movie fan
+  So that I can share a movie with other movie fans
+  I want to add a movie to Rotten Potatoes database
 
-Scenario: Buy last coffee
-  Given there are 1 coffees left in the machine
-  And I have deposited 1$
-  When I press the coffee button
-  Then I should be served a coffee
+Scenario: Add a movie
+  Given I am on the RottenPotatoes home page
+  When I follow “Add new movie”
+  Then I should be on the Create New Movie page
+  When I fill in “Title” with “Men in Black”
+  And I select “PG-13” from “Rating”
+  And I press “Save Changes”
+  Then I should be on the RottenPotatoes home page
+  And I should see “Men In Black”
