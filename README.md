@@ -1,6 +1,6 @@
-# Τίτλος
+# Title
 
-## Συγγραφείς
+## Authors
 
 - Author 1: Kyriakos Chatzidimitriou
 - Author 2: Name Surname
