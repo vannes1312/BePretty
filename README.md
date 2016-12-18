@@ -2,12 +2,12 @@
 
 ## Authors
 
-- Author 1: Kyriakos Chatzidimitriou
-- Author 2: Name Surname
+- Author 1: Tzika Vivian
+- Author 2: Vamvakas Yiannis
 
 ## Abstract
 
-A summary of your project
+Kallos is a booking web application for beauty services, such as hair styling, hair removal, make-up, spa etc. Your beauty appointment is just five clicks away.
 
 ## Table of Contents
 
