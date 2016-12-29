@@ -4,7 +4,7 @@
 
 ### FR-1: Sign up
 
-The user MUST be able to sign up to the system.
+The user must be able to sign up to the system.
 
 **Description**
 
@@ -20,13 +20,13 @@ https://github.com/vannes1312/BeautyMe/blob/master/requirements/signup.feature
 
 ### FR-2: Log in to the system
 
-The user MUST be able to log in to the system.
+The user must be able to log in to the system.
 
 **Description**
 
-The user must be able to log in providing her username and password so that she reaches her account and have a personalized experience.
+Each user must log in the system using the unique username and password that have been created in registration. According to the information each user provides, she enters in the relevant Home Page (Registered Users / Professionals / Administrator).
 
-<b> User Priority: (5/5) </b> It is very important for the users to be able to log in so that they can exploit the system's functionality.
+<b> User Priority: (5/5) </b> The requirement is essential for the user in order to keep her account safe and in order to use all the system’s services. The system divides the users according to the sign up information into Registered Users and Professionals and each receives the relevant benefits and limits.
 
 <b> Technical Difficulty: (1/5) </b> No particular technical difficulty.   
 
@@ -36,7 +36,7 @@ https://github.com/vannes1312/BeautyMe/blob/master/requirements/login.feature
 
 ### FR-3: Add e-shop
 
-The Professional MUST be able to add his own business in the system
+The Professional must be able to add his own business in the system
 
 **Description**
 
@@ -49,6 +49,22 @@ As the main purpose of the system is to offer beauty services, the Professionals
 #### User story
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/addeshop.feature
+
+### FR-4: Guest functionality
+
+The Guest must be able to see the registered Professionals.
+
+**Description**
+
+The Guest must be able to see the beauty centers, book an appointment or buy products, by providing additional information, such as payment info, billing address etc.
+
+<b> User Priority: (5/5) </b> The requirement is crucial for the systems usability, as many users do not like an obligatory account. Thus, the target audience is expanded.
+
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/guest-functionality.feature
 
 ## Use case diagram
 

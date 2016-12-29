@@ -16,5 +16,5 @@
 	Scenario: The Professional does not fill the required fields of the e-shop form
 		Given I am at the e-shop's registration form
 		And I do not fill the required fields
-		Then I get the message “please complete all the entries”
+		Then I get the message “please fill in all the entries”
 		And I am redirected to the e-shop form page, with indication of what info is missing

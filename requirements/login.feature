@@ -35,3 +35,15 @@
 	  And I press the log in button
 	  And I can not be authenticated
 	  Then I should get a message to enter my credentials correctly or "Sign up"
+
+	Scenario: Forgotten password
+		Background: Home Page - Log in
+		Given I have forgotten my password
+		When I select the option “Forgot your password?”
+		Then I receive an e-mail with a changing password link
+		When I click the link
+		Then I see a changing password form
+		When I choose my new password
+		And I confirm my new password
+		And I click “finish”
+		Then my new password is determined
