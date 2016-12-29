@@ -2,15 +2,17 @@
 
 ## Functional Requirements and User Stories
 
-### FR-1
+### FR-1: Sign up
 
-Functional requirement sentence
+The user MUST be able to sign up to the system.
 
 **Description**
 
-Describe the FR in more details
+The user must have the possibility to sign up providing her personal information in order her to create a personal profile in the system and to use the services of the system.
 
-_Note: every requirement/constraint should have at least the following: identifier, user priority, technical difficulty_
+<b> User Priority: (5/5) </b> It is very important for the users to be able to sign up so that they can exploit every service and offer that the site offers.
+
+<b> Technical Difficulty: (1/5) No particular technical difficulty.   
 
 #### User story
 

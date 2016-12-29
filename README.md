@@ -1,4 +1,4 @@
-# Title
+# BeautyMe
 
 ## Authors
 
@@ -7,10 +7,8 @@
 
 ## Abstract
 
-Kallos is a booking web application for beauty services, such as hair styling, hair removal, make-up, spa etc. Your beauty appointment is just five clicks away.
+BeautyMe is a booking web application for beauty services, such as hair styling, hair removal, make-up, spa etc. Within one minute, and only five clicks away, you can book an appointment with a beauty proffessional, or buy beauty products.
 
 ## Table of Contents
 
-Links to the documents you have created
-
-  1. [Introduction](https://github.com/kyrcha/soft-eng-assignment/blob/master/documentation/intro.md)
+  1. [Introduction](https://github.com/vannes1312/BeautyMe/blob/master/documentation/intro.md)
