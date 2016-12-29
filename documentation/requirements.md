@@ -34,6 +34,22 @@ The user must be able to log in providing her username and password so that she 
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/login.feature
 
+### FR-3: Add e-shop
+
+The Professional MUST be able to add his own business in the system
+
+**Description**
+
+As the main purpose of the system is to offer beauty services, the Professionals must be able to create their e-shop, providing beauty services or beauty products.
+
+<b> User Priority: (5/5) </b> The requirement is vital for the Customers, as without the existence of beauty centers, the Customer cannot search for services and the system becomes inutile.
+
+<b> Technical Difficulty: (3/5) No particular technical difficulty. However, since each Professional will have to set up her e-shop herself, there is going to be need for help and support.   
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/addeshop.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases

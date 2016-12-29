@@ -11,13 +11,13 @@
 	  And I press the log in button
 	  Then I should be redirected to the appropriate Registered User Home Page
 
-	Scenario: Login as a Proffessional
+	Scenario: Login as a Professional
 		Given I am in Home Page
 		When I press the "Log in" button
 		Then I should be on the Log in Page
 		When I fill "Username" and "Password"
 		And I press the log in button
-		Then I should be redirected to the appropriate Proffessional Home Page
+		Then I should be redirected to the appropriate Professional Home Page
 
 	Scenario: Login as an administrator
 	  Given I am in Home Page
