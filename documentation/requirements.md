@@ -16,7 +16,7 @@ The user must have the possibility to sign up providing her personal information
 
 #### User story
 
-Create here the related feature/user story based on BDD and the Gherkin syntax (https://github.com/cucumber/cucumber/wiki/Gherkin). Do that by putting a link to the relevant feature file.
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/signup.feature
 
 ## Use case diagram
 
