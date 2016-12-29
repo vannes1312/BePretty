@@ -1,29 +1,22 @@
-Feature: basket
+	Feature: Sign up to the system
+		As a new user
+		So that I can exploit the system's potential
+		I want to create my unique account
 
-	# POST /baskets
-	# GET, PUT, DELETE /baskets/{basket_id}
+	Scenario: Sign up to the system
+		Given I am on the Home Page
+		When I choose “sign up”
+		Then I see the user’s registration form
+		When I complete the required personal information
+		And I press “Finish”
+		Then I receive a confirmation e-mail with an activation link
+		When I press the link from my mail
+		Then the Home page opens
+		And I see the message “Your registration has been completed successfully, Welcome to BePretty
 
-	Background:
-		Given each basket belongs to the "baskets"
-
-	Scenario: new basket
-		When I submit <products> to the basket
-			|name|qt|
-		Then I should see the created basket
-		And I should be prompted to order
-		And I should have the option to view my basket
-
-	Scenario: update basket
-		Given I have a basket with products
-		When I update the basket with new <products>
-			|name|qt|
-		Then I should see the updated basket
-		And I should be prompted to order
-		And I should have the option to view my basket
-
-	Scenario: retrieve basket
-		Given I have a basket with products
-		When I retrieve the basket by it's id
-		Then I should see it's contents
-		And I should be prompted to order
-		And I should have the option to view my basket
+	Scenario: Registration failing
+		Given I click “sign up”
+		And the registration form appears
+		When I complete my personal information with one or more mistakes
+		Then I see an error notification
+		And return to home page 
