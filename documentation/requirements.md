@@ -12,7 +12,7 @@ The user must have the possibility to sign up providing her personal information
 
 <b> User Priority: (5/5) </b> It is very important for the users to be able to sign up so that they can exploit every service and offer that the site offers.
 
-<b> Technical Difficulty: (1/5) No particular technical difficulty.   
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.   
 
 #### User story
 
@@ -28,7 +28,7 @@ The user must be able to log in providing her username and password so that she 
 
 <b> User Priority: (5/5) </b> It is very important for the users to be able to log in so that they can exploit the system's functionality.
 
-<b> Technical Difficulty: (1/5) No particular technical difficulty.   
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.   
 
 #### User story
 
@@ -44,7 +44,7 @@ As the main purpose of the system is to offer beauty services, the Professionals
 
 <b> User Priority: (5/5) </b> The requirement is vital for the Customers, as without the existence of beauty centers, the Customer cannot search for services and the system becomes inutile.
 
-<b> Technical Difficulty: (3/5) No particular technical difficulty. However, since each Professional will have to set up her e-shop herself, there is going to be need for help and support.   
+<b> Technical Difficulty: (3/5) </b> No particular technical difficulty. However, since each Professional will have to set up her e-shop herself, there is going to be need for help and support.   
 
 #### User story
 
