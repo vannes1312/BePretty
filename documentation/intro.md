@@ -14,6 +14,9 @@ The main purpose of the application is to provide to users the possibility to ma
 The user should register in order to exploit the total potential of the system and then she can read about the latest fashion trends, search for a beauty center or professional, make an appointment and buy a product.
 The professionals on the other hand can create their own professional profile providing information, products, offers and photographs showing their work. They can also delete their profile whenever they desire.
 
+## Users' Characteristics
+The users are divided into three categories. The professionals who have the possibility to create their own e-shop, uploading photographs, products and offers, the users who can be informed about the beauty trends, can make an appointment or buy a product once they register and the administrator who can have access to feedback page and have a complete picture of the system in order to keep it update and efficient. 
+
 ## Limitations 
 
 There are no strict limitations as the users do not need to install the software to their computer or their mobile. The BePretty works autonomously online so the only precondition is the user to have access to the internet.
