@@ -29,13 +29,13 @@ There are no strict limitations as the users do not need to install the software
 
 
 ## Glossary
-<Log-in>: It is referred in the procedure of registering in the system providing personal information and creating an account.  
-<Sign in>: It is referred in the user’s access to the system by giving the password and the username 
-<Sign out>: It is referred in the user’s exit of the system
-<Username> It is the unique personal name which is determined by the user in the registration and it is used every time the user signs in the system 
-<Password> It is the secret personal code (numbers, words, signs or a combination of these) which is determined by the user in the registration and it is used every time she signs in the system
-<User>: Every person who is registered in the system, the user is also mentioned as “she” since the system addresses mainly to women.  
-<Guest>: Unregistered Users
-<Professionals>: All the professional hairdressers, make-up artists, tattoo/piercing artists and aestheticians are mentioned as professionals.  
-<Beauty Centers> Professionals’ institutions and private places are referred as beauty centers.  
-<Activation Link> It is mentioned as a link which is sent automatically to the user’s e-mail in order the registration to be verified
+  Log-in: It is referred in the procedure of registering in the system providing personal information and creating an account.  
+  Sign in: It is referred in the user’s access to the system by giving the password and the username 
+  Sign out: It is referred in the user’s exit of the system
+  Username It is the unique personal name which is determined by the user in the registration and it is used every time the user signs in the system 
+  Password: It is the secret personal code (numbers, words, signs or a combination of these) which is determined by the user in the registration and it is used every time she signs in the system
+  User: Every person who is registered in the system, the user is also mentioned as “she” since the system addresses mainly to women.  
+  Guest: Unregistered Users
+ Professionals: All the professional hairdressers, make-up artists, tattoo/piercing artists and aestheticians are mentioned as professionals.  
+ Beauty Centers: Professionals’ institutions and private places are referred as beauty centers.  
+ Activation Link: It is mentioned as a link which is sent automatically to the user’s e-mail in order the registration to be verified
