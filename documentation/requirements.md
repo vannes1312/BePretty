@@ -268,11 +268,27 @@ The Professional must be able to see the upcoming appointments, previous appoint
 
 <b> User Priority: (2/5) </b> It is crucial for the Professional to have the possibility to see the appointment history and the scheduled appointments on his account, in order to be consequent.
 
-<b> Technical Difficulty: (1/5) </b> No particular technical difficulty
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.
 
 #### User story
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/check-schedule.feature
+
+### FR-18: Professionals and Registered Users: Delete account
+
+Professionals and Registered Users must be able to delete her account from the system.
+
+**Description**
+
+Professionals and Registered Users must have the possibility to delete her account from the system anytime she feels the system is not longer useful to her or when the business cease to exist.
+
+<b> User Priority: (4/5) </b> Users should have the option to delete her account anytime she desires. The registration should not obligatorily remain in the system if the user does not wishes so.
+
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/delete-account.feature
 
 ## Use case diagram
 
