@@ -52,7 +52,7 @@ https://github.com/vannes1312/BeautyMe/blob/master/requirements/addeshop.feature
 
 ### FR-4: Guest functionality
 
-The Guest must be able to see the registered Professionals.
+The Guest must be able to book an appointment or buy products.
 
 **Description**
 
@@ -65,6 +65,22 @@ The Guest must be able to see the beauty centers, book an appointment or buy pro
 #### User story
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/guest-functionality.feature
+
+### FR-5: Sign out
+
+All Users except Guests must be able to sign out of the system.
+
+**Description**
+
+When the User wishes, she must be able to sign out and returns to Home Page as a Guest.
+
+<b> User Priority: (5/5) </b> The user must have the option to sign out of the system when she finishes using the system for additional security.
+
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/signout.feature
 
 ## Use case diagram
 

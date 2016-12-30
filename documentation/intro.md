@@ -32,7 +32,7 @@ The person who acts as the administrator of the system.
 
 **User**
 
-Every person who is registered in the system, including Guests, Registered Users and Proffessionals. Users is also mentioned as “she” since the system addresses mainly to women.
+Every person who is registered in the system, including Guests, Registered Users, Proffessionals and the Administrator. Users is also mentioned as “she” since the system addresses mainly to women.
 
 **Guest**
 
