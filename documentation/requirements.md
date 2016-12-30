@@ -210,21 +210,37 @@ The Professional must be able to manage and remove the published offers, product
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/remove-services.feature
 
-### FR-14: Customers: Book an appointment or buy products
+### FR-14: Customers: Book an appointment
 
-The Customer must be able to book appointments or buy products from a Professional.
+The Customer must be able to book appointments from a Professional.
 
 **Description**
 
-The Customer must be able to book appointments or buy products from a Professional after filling the required information.
+The Customer must be able to book an appointment with a Professional after filling the required information.
 
-<b> User Priority: (5/5) </b> It is the most important feature of the system. The Customer must be able to book an appointment or buy a product in less than one minute.
+<b> User Priority: (5/5) </b> It is the most important feature of the system. The Customer must be able to book an appointment in less than one minute.
 
-<b> Technical Difficulty: (5/5) </b> The system should be able to search for all available Professionals providing the requested service or product, as well as the available dates and hours. Moreover, the Customer must be able to securely pay via credit card or PayPal.
+<b> Technical Difficulty: (5/5) </b> The system should be able to search for all available Professionals providing the requested service, as well as the available dates and hours. Moreover, the Customer must be able to securely pay via credit card or PayPal.
 
 #### User story
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/book-appointment.feature
+
+### FR-15: Select language
+
+The User should be able to select the language of the system.
+
+**Description**
+
+The user should be able to select in which language she prefers to navigate by clicking the relevant flag from the Home page.
+
+<b> User Priority: (4/5) </b> It is useful for the User to be able to change the language of the system in order to have a better understanding of the choices she makes.
+
+<b> Technical Difficulty: (5/5) </b> More languages mean more manhours. Unfortunately, automated translation does not function properly 100%, and as a result there will be need for collaboration with developers that speak the languages available.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/change-language.feature
 
 ## Use case diagram
 
