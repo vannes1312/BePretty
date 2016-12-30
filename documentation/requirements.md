@@ -356,7 +356,7 @@ https://github.com/vannes1312/BeautyMe/blob/master/requirements/product.feature
 
 ## Use case diagram
 
-Representation of all users and user stories/use cases
+![GitHub Logo](/resources/UCD.jpg)
 
 ## Activity diagrams
 
