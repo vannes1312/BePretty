@@ -104,15 +104,31 @@ The User must be able to search a beauty service according to criteria.
 
 **Description**
 
-The user must have the possibility to search for an appointment or a product, or a Professional selecting the area of interest, or providing the name of the center, the type of service, the rating etc.
+The user must have the possibility to search for an appointment or a product, or a Professional providing tags of keywords, such as the name of the center, the type of service etc.
 
-<b> User Priority: (5/5) </b> It is very important for the user to have the opportunity to search by criteria receiving specific results according to them because it increases usability, especially if the User enters proper terms. Through key words and tags, the User gets the proper results, and saves time and clicks.
+<b> User Priority: (5/5) </b> This feature is critical for the usability of the system. After the Customer enters his address, all the Proffesionals nearby are shown as a list, starting from the closest one.
 
 <b> Technical Difficulty: (3/5) </b> The search feature has no particular technical difficulty, but its functionality depends at a percentage to the choice of tags and description by the Professionals.
 
 #### User story
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/search.feature
+
+### FR-8: Search by location
+
+The User must be able to search for Profesionals nearby by entering his address.
+
+**Description**
+
+The user must have the possibility to search for an appointment or a product, or a Professional by entering his address to the related box in the Home Page, or the search bar.
+
+<b> User Priority: (5/5) </b> It is very important for the user to have the opportunity to search by criteria receiving specific results according to them because it increases usability, especially if the User enters proper terms. Through key words and tags, the User gets the proper results, and saves time and clicks.
+
+<b> Technical Difficulty: (3/5) </b> The search by location feature is feasible through Google Maps.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/search-location.feature
 
 ## Use case diagram
 
