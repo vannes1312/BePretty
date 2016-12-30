@@ -98,6 +98,22 @@ The User must be able to see the various offers from Professionals near him, or 
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/shown-offers.feature
 
+### FR-7: Search services and products
+
+The User must be able to search a beauty service according to criteria.
+
+**Description**
+
+The user must have the possibility to search for an appointment or a product, or a Professional selecting the area of interest, or providing the name of the center, the type of service, the rating etc.
+
+<b> User Priority: (5/5) </b> It is very important for the user to have the opportunity to search by criteria receiving specific results according to them because it increases usability, especially if the User enters proper terms. Through key words and tags, the User gets the proper results, and saves time and clicks.
+
+<b> Technical Difficulty: (3/5) </b> The search feature has no particular technical difficulty, but its functionality depends at a percentage to the choice of tags and description by the Professionals.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/search.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
