@@ -130,6 +130,22 @@ The user must have the possibility to search for an appointment or a product, or
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/search-location.feature
 
+### FR-9: Rating
+
+The Customer must be able to evaluate each Professional.
+
+**Description**
+
+The Customer must have the possibility to evaluate each Professional choosing a rating between 0 - 5 stars according to the experience from services she received so that the rest of the users to know the quality of the services of each Professional.
+
+<b> User Priority: (3/5) </b> It is important for the Customers to evaluate the Professional and leave feedback, so that the rest of the Customers can choose which business they will choose more wisely.
+
+<b> Technical Difficulty: (3/5) </b> There should be a feedback form, which would prevent racist or abusive comments.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/rating.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
