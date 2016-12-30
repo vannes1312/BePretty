@@ -146,6 +146,22 @@ The Customer must have the possibility to evaluate each Professional choosing a 
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/rating.feature
 
+### FR-10: Profesionals: Upload images
+
+The Professional must be able to upload images to her e-shop's portfolio page.
+
+**Description**
+
+The Professional must be able to add images relevant to the provided services or products to promote them, and so that the Customers have a clear picture of the provided services.
+
+<b> User Priority: (3/5) </b> It is helpful for the Professional to promote her services with images and for the Customers to check the quality of services.
+
+<b> Technical Difficulty: (5/5) </b> There should be enough space on the server for the system to be capable.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/upload-images.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
