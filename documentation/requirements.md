@@ -338,6 +338,22 @@ The user should get information about the purpose of the system, how it works, w
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/how-it-works.feature
 
+### FR-22: Products
+
+The Customer must be able to buy beauty products.  
+
+**Description**
+
+The Customer should be able to add products to the basket, choose a payment option, billing and shipping address and, eventually, receive products through postal services.
+
+<b> User Priority: (5/5) </b> Being able to buy products is essential for the site's purpose.
+
+<b> Technical Difficulty: (5/5) </b> The building and maintenance of the site's own e-shop with beauty products is one of the most difficult tasks to be performed.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/product.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
