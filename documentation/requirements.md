@@ -258,6 +258,22 @@ After the Registered User has booked one or more appointments, she should have t
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/reguser-history.feature
 
+### FR-17: Professionals: Check schedule
+
+The Professional must be able to see the upcoming appointments.
+
+**Description**
+
+The Professional must be able to see the upcoming appointments, previous appointments including all the relevant information, the name, contact and billing information of the Customer.
+
+<b> User Priority: (2/5) </b> It is crucial for the Professional to have the possibility to see the appointment history and the scheduled appointments on his account, in order to be consequent.
+
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/check-schedule.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
