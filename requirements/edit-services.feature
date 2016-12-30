@@ -1,24 +1,17 @@
-	Feature: Add offer
-		As a Professional
-		So that my e-shop is promoted
-		I want to add an offer
+	Feature: Edit service
+		As a professional
+		So that I keep my e-shop up to date
+		I want to edit the information of the service
 
-	Scenario: Successful entry of an offer
-		Given I am at Professional Home Page
-		When I select “Offers” from the main menu on the Home Page
-		Then I am prompted with the Offer form
-		When I input all the required data
-		And press enter or "Publish Offer"
-		Then I get the message "Offer successfully published"
-		And the offer is shown to whoever is related
-		And I return to the previous screen
-
-	Scenario: Unsuccessful entry of an offer
-		Given I am at Professional Home Page
-		When I select “Offers” from the main menu on the Home Page
-		Then I am prompted with the Offer form
-		When I input the required data
-		But don't input all of the required data
-		And press enter or "Publish Offer"
-		Then I get the message “please fill in all the required info”
-		And I return to the Offer form page, with indication of what info is missing
+	Scenario: Successful edit of a service
+		Background: Manage e-shop
+		Given I want to edit a current service of my e-shop
+		When I select the service I want to edit
+		Then I see the form with the service's information
+		When I select “edit”
+		Then the form becomes editable
+		When I edit the entries I want
+		And I select “save changes”
+		Then I get the message "Entry successfully updated"
+		And the service's information is updated
+		And I return to Manage e-shop page

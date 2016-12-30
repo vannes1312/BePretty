@@ -194,6 +194,22 @@ The professional must have the opportunity to manage and edit the published offe
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/edit-services.feature
 
+### FR-13: Professionals: Edit services
+
+The Professional must be able to edit her published offers, products or services.
+
+**Description**
+
+The professional must have the opportunity to manage and edit the published offers, products or services and update or delete them.
+
+<b> User Priority: (5/5) </b> The Professionals should be able to edit their own offers, products or services so that they keep their profile up to date.
+
+<b> Technical Difficulty: (5/5) </b> After one logs in as a Professional, she will have access to a dashboard related to her e-shop (Manage e-shop). The simpler the procedure, the less mistakes by the Professional, and thus less manhours for the Administrator.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/edit-services.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
