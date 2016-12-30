@@ -65,3 +65,7 @@ Non-Functional requirement.
 **Customers**
 
 Registered Users and Guests altogether.
+
+**Offer**
+
+It is referred to services of products that are provided with discounted price for a period of time by the Professionals.

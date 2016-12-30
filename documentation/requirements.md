@@ -82,6 +82,22 @@ When the User wishes, she must be able to sign out and returns to Home Page as a
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/signout.feature
 
+### FR-6: Shown Offers
+
+The Customer must be able to get information about the latest offers by the Professionals.
+
+**Description**
+
+The User must be able to see the various offers from Professionals near him, or related Professionals at various places throughout the system.
+
+<b> User Priority: (4/5) </b> By realizing this requirement, the Customer is filled in for the related offers without extra searching. This enables the user to search for services quickly and easily, or book an appointment even faster.
+
+<b> Technical Difficulty: (4/5) </b> The offers should be placed very wisely throughout the site. Moreover, the shown offers should be strongly personalized, based on location, relevance and history.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/shown-offers.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
