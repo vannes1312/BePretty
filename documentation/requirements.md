@@ -322,6 +322,22 @@ The Administrator must have the permission to check the appointments, the commen
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/admin.feature
 
+### FR-21: How it works
+
+The User must be able to be get information about the system.  
+
+**Description**
+
+The user should get information about the purpose of the system, how it works, what its rates are, and every related information.
+
+<b> User Priority: (1/5) </b> It could be useful for the user to know this information.
+
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/how-it-works.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
