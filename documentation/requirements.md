@@ -178,13 +178,13 @@ The Professional must have the opportunity to add a valid offer with the include
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/add-offer.feature
 
-### FR-12: Professionals: Edit services
+### FR-12: Professionals: Edit offers, services or products
 
 The Professional must be able to edit her published offers, products or services.
 
 **Description**
 
-The professional must have the opportunity to manage and edit the published offers, products or services and update or delete them.
+The professional must have the opportunity to manage and edit the published offers, products or services and update them.
 
 <b> User Priority: (5/5) </b> The Professionals should be able to edit their own offers, products or services so that they keep their profile up to date.
 
@@ -194,21 +194,21 @@ The professional must have the opportunity to manage and edit the published offe
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/edit-services.feature
 
-### FR-13: Professionals: Edit services
+### FR-13: Professionals: Remove offers, services or products
 
-The Professional must be able to edit her published offers, products or services.
+The Professional must be able to remove her published offers, products or services.
 
 **Description**
 
-The professional must have the opportunity to manage and edit the published offers, products or services and update or delete them.
+The Professional must be able to manage and remove the published offers, products or services.
 
-<b> User Priority: (5/5) </b> The Professionals should be able to edit their own offers, products or services so that they keep their profile up to date.
+<b> User Priority: (5/5) </b> The Professionals should be able to remove their own offers, products or services so that they keep their profile up to date.
 
-<b> Technical Difficulty: (5/5) </b> After one logs in as a Professional, she will have access to a dashboard related to her e-shop (Manage e-shop). The simpler the procedure, the less mistakes by the Professional, and thus less manhours for the Administrator.
+<b> Technical Difficulty: (5/5) </b> Exaclty the same with FR-12.
 
 #### User story
 
-https://github.com/vannes1312/BeautyMe/blob/master/requirements/edit-services.feature
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/remove-services.feature
 
 ## Use case diagram
 
