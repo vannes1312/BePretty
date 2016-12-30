@@ -210,6 +210,22 @@ The Professional must be able to manage and remove the published offers, product
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/remove-services.feature
 
+### FR-14: Customers: Book an appointment or buy products
+
+The Customer must be able to book appointments or buy products from a Professional.
+
+**Description**
+
+The Customer must be able to book appointments or buy products from a Professional after filling the required information.
+
+<b> User Priority: (5/5) </b> It is the most important feature of the system. The Customer must be able to book an appointment or buy a product in less than one minute.
+
+<b> Technical Difficulty: (5/5) </b> The system should be able to search for all available Professionals providing the requested service or product, as well as the available dates and hours. Moreover, the Customer must be able to securely pay via credit card or PayPal.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/book-appointment.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
