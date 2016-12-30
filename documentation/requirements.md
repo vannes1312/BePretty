@@ -306,6 +306,22 @@ During navigation, the Customer may have queries about the services, or may have
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/contact.feature
 
+### FR-20: Administrator: Observation
+
+The Administrator must be able to see all the actions that have been done by Customers and Professionals.
+
+**Description**
+
+The Administrator must have the permission to check the appointments, the comments and the posts that have been made by Customers or Professionals so that he has a full image of the usability of his system, or prevent abusive behavior.
+
+<b> User Priority: (3/5) </b> It is critical that the site's Administrator is able to check the actions by Customers and Professionals so that he can interfere with them if/when he is asked to. However, the system oughts to protect its users from possible mistreatment of information.
+
+<b> Technical Difficulty: (4/5) </b> There is no particular technical difficulty, but the Administrator should be able to interfere to resolve a conflict, without violating the Users confidentiality.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/admin.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
