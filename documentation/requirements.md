@@ -146,7 +146,7 @@ The Customer must have the possibility to evaluate each Professional choosing a 
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/rating.feature
 
-### FR-10: Profesionals: Upload images
+### FR-10: Professionals: Upload images
 
 The Professional must be able to upload images to her e-shop's portfolio page.
 
@@ -161,6 +161,22 @@ The Professional must be able to add images relevant to the provided services or
 #### User story
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/upload-images.feature
+
+### FR-11: Professionals: Add Offer
+
+The Professional must be able to add a new Offer.
+
+**Description**
+
+The Professional must have the opportunity to add a valid offer with the included information, dates and price so that she can promote her business.
+
+<b> User Priority: (3/5) </b> It is quite important for the Professional to be able to add offers for users to see as it is one of basic beneficial purposes of the site.
+
+<b> Technical Difficulty: (2/5) </b> There should be a form for the Professional to enter the info about the offer. Moreover, the system should check if a Professional abuses the feature.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/add-offer.feature
 
 ## Use case diagram
 
