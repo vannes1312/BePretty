@@ -2,7 +2,7 @@
 
 ## Scope
 
-BeautyMe is a booking web application for beauty services, such as hair styling, hair removal, make-up, spa etc. Within one minute, and only five clicks away, you can book an appointment with a beauty proffessional, or buy beauty products, such as shampoos or taning oils.
+BePretty is a booking web application for beauty services, such as hair styling, hair removal, make-up, spa etc. Within one minute, and only five clicks away, you can book an appointment with a beauty proffessional, or buy beauty products, such as shampoos or taning oils.
 
 ## Glossary
 
@@ -46,7 +46,7 @@ User that have signed up in the system, and tend to use it regularly.
 
 Registered Users and Guests altogether.
 
-**Proffessionals**
+**Professionals**
 
 All the professional hairdressers, make-up artists, tattoo/piercing artists and aestheticians that have set their e-shop within the system are mentioned as professionals.  
 
