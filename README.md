@@ -14,5 +14,4 @@ It is designed to offer to users a plenty of beauty service options or beauty pr
 ## Table of Contents
 
   1. [Introduction](https://github.com/vannes1312/BeautyMe/blob/master/documentation/intro.md)
-
-
+  2. [User requirements](https://github.com/vannes1312/BeautyMe/blob/master/documentation/requirements.md)
