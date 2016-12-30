@@ -290,6 +290,22 @@ Professionals and Registered Users must have the possibility to delete her accou
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/delete-account.feature
 
+### FR-19: Customers and Professionals: Contact
+
+The Customer should be able to contact with any Professional through messages.
+
+**Description**
+
+During navigation, the Customer may have queries about the services, or may have a health condition that the Professional should be aware of before the actual appointment.
+
+<b> User Priority: (2/5) </b> It could be useful for Customers to have contact option before booking an appointment.
+
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty.
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/contact.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
