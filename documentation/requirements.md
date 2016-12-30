@@ -242,6 +242,22 @@ The user should be able to select in which language she prefers to navigate by c
 
 https://github.com/vannes1312/BeautyMe/blob/master/requirements/change-language.feature
 
+### FR-16: Registered User's History
+
+The Registered User must be able to see all her previous appointments.
+
+**Description**
+
+After the Registered User has booked one or more appointments, she should have the option to check her previous actions with the relevant information.
+
+<b> User Priority: (2/5) </b> It could be useful for the Registered User to be able to see her former actions so that she can keep her account more organized, like a diary. However, it is not a necessary requirement since the system is absolutely functional without it.
+
+<b> Technical Difficulty: (1/5) </b> No particular technical difficulty
+
+#### User story
+
+https://github.com/vannes1312/BeautyMe/blob/master/requirements/reguser-history.feature
+
 ## Use case diagram
 
 Representation of all users and user stories/use cases
