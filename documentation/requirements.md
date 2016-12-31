@@ -360,7 +360,34 @@ https://github.com/vannes1312/BeautyMe/blob/master/requirements/product.feature
 
 ## Activity diagrams
 
-Create activity diagrams to portray the flow of basic user process in the system.
+>**Book an appointment as a Guest:**
+
+![GitHub Logo](/resources/guest.png)
+
+***
+
+>**Book an appointment as a Registered User:**
+
+![GitHub Logo](/resources/reguser.png)
+
+***
+
+>**Fastest scenario:**
+
+![GitHub Logo](/resources/reguser2.png)
+
+***
+
+>**Buy a product:**
+
+![GitHub Logo](/resources/product.png)
+
+***
+
+>**Set your e-shop in 4 simple steps:**
+
+![GitHub Logo](/resources/proffesional.png)
+
 
 ## Mockups and Storyboards
 
