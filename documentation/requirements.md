@@ -433,7 +433,7 @@ Since a great amount of users prefer using a smartphone or a tablet, it is cruci
 
 ### NFR-5
 
-Τhe system should be supported in multiple languages.
+Τhe system should be supported in English, Italian, French and Greek.
 
 **Description**
 
