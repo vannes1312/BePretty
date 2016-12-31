@@ -8,7 +8,7 @@ The Guest clicks "Book an appointment" and is prompted to the following form:
 
 ![GitHub Logo](/resources/02_google_form.png)
 
-The Guest confirms his address and presses "Continue". Then the system returns all the Professionals found nearby the selected address as shown in the next mockup. (Note: the background of this page is experimental and won't be used due to differentiation).
+The Guest confirms his address and presses "Continue". Then the system returns all the Professionals found near the selected address as shown in the next mockup. (Note: the background of this page is experimental and won't be used due to differentiation).
 
 ![GitHub Logo](/resources/04_choose_proffessional.png)
 
@@ -36,4 +36,4 @@ Step 5: The Guest is prompted to choose payment method. The Guest chooses PayPal
 
 ![GitHub Logo](/resources/11_success.png)
 
-All the required details are shown, and the Guest may enter his number for a reminder when the day of the appointment comes. A confirmation e-mail with all the appointment details is also being sent. That's it! 
+All the required details are shown, and the Guest may enter his number for a reminder when the day of the appointment comes. A confirmation e-mail with all the appointment details is also being sent. That's it!

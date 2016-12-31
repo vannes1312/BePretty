@@ -394,6 +394,9 @@ https://github.com/vannes1312/BeautyMe/blob/master/requirements/product.feature
 **Book an appointment as a Guest:**
 https://github.com/vannes1312/BePretty/blob/master/documentation/guest-storyboard.md
 
+**First step of setting an e-shop as a Professional:**
+https://github.com/vannes1312/BePretty/blob/master/documentation/business-setup.md
+
 ## Non-Functional Requirements
 
 ### NFR-1
