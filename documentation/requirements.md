@@ -391,7 +391,8 @@ https://github.com/vannes1312/BeautyMe/blob/master/requirements/product.feature
 
 ## Mockups and Storyboards
 
-Put the link to the relevant storyboard.md files that display how one goes from one mockup to another.
+**Book an appointment as a Guest:**
+https://github.com/vannes1312/BePretty/blob/master/documentation/guest-storyboard.md
 
 ## Non-Functional Requirements
 
