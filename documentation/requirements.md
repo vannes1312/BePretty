@@ -401,8 +401,81 @@ https://github.com/vannes1312/BePretty/blob/master/documentation/business-setup.
 
 ### NFR-1
 
-Functional requirement sentence
+The system must be able to show the address of each business in a form of map.
 
 **Description**
 
-Describe the FR in more details
+The system must give the opportunity to the user to see the location of the business she chose not only by the address name but also in a map, using Google Maps.
+
+### NFR-2
+
+The system must support .jpg, .png, .tif formats.
+
+**Description**
+
+The Administrator and Professionals must be able to upload images. The most common formats thus must be supported.
+
+### NFR-3
+
+The system must function properly usine Google Chrome, Safari, Mozilla Firefox and Opera.
+
+**Description**
+
+The system must be responsive to the most common browsers.
+
+### NFR-4
+
+The system must be fully responsive when displayed by iOS and Android devices.
+
+**Description**
+
+Since a great amount of users prefer using a smartphone or a tablet, it is crucial that the system is fully responsive.
+
+### NFR-5
+
+Τhe system should be supported in multiple languages.
+
+**Description**
+
+The user should be able to change the system’s language choosing between the supported languages from the header.
+
+### NFR-6
+
+The Home page should be loaded in less than 1 second
+
+**Description**
+
+The system should be loaded in less than 1 second in order to be rapidly accessible.
+
+### NFR-7
+
+The system must ensure the security of user’s personal data according to the Content Security Policy Level 3 of W3C.
+
+**Description**
+
+The system must guarantee that the users’ personal information will not be used without user’s approval so that the system is reliable.   
+
+### NFR-8
+
+The system must accept PayPal, Visa and Mastercard for payments
+
+**Description**
+
+The system must give the possibility to users to place payments by using the most common credit cards and PayPal.
+
+### NFR-9
+
+The system must guarantee the safety of payments according to
+PCI DSS v3.2
+
+**Description**
+
+The Customer must be able to safely pay without the possibility of her payment information to be exposed.
+
+### NFR-10
+
+The system should be accessible according to WCAG 2.0
+
+**Description**
+
+The system should provide access to disabled people by turning the page to disabled people mode when the user presses the button from the top of the Home Page.
