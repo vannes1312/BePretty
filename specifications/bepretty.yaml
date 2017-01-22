@@ -1,0 +1,154 @@
+# Example YAML to get you started quickly.
+# Be aware that YAML has indentation based scoping.
+# Code completion support is available so start typing for available options.
+swagger: '2.0'
+
+# This is your document metadata
+info:
+  version: "0.0.1"
+  title: <BePretty>
+  description: Book an appointment in 1'!
+# termsOfService:  
+  contact:
+    name: BePretty Team
+    email: bepretty@gmail.com
+    url: http://bepretty.com
+  # licence:
+    # name:
+    # url:
+# host:
+# basePath: /api
+# schemes:
+#  - http
+consumes: 
+  - application/json
+produces:
+  - application/json
+
+definitions:
+  customer:
+    type: object
+    required:
+      - id
+      - name
+    properties:
+      id:
+        type: integer
+        format: int64
+      name:
+        type: string
+  newCustomer:
+    type: object
+    required:
+      - name
+    properties:
+      name:
+        type: string
+  product:
+    type: object
+    required:
+      - id
+      - name
+      - professional
+      - price
+    properties:
+      id:
+        type: integer
+        format: int64
+      name:
+        type: string
+      professional:
+        type: string
+      price:
+        type: number
+        format: float
+  newProduct:
+    type: object
+    required:
+      - name
+      - professional
+      - price
+    properties:
+      name:
+        type: string
+      professional:
+        type: string
+      price: 
+        type: number
+        format: float
+  order:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      qty: 
+        type: integer
+      customer:
+        $ref: '#/definitions/customer'
+      product:
+        $ref: '#/definitions/product'
+      finalPrice:
+        type: number
+        format: float
+        
+# Describe your paths here
+paths:
+  # This is a path endpoint. Change it.
+  /guests:
+    # This is a HTTP operation
+    post:
+      # Describe this verb here. Note: you can use markdown
+      description: Create a new Registered_user
+      operationId: addRegistered_user
+      parameters:
+        - name: Registered_user
+          in: body
+          required: true
+          description: Guest to be added as a Registered User
+          schema:
+            $ref: '#/definitions/newRegistered_user
+      responses:
+        201:
+          description: User is now registered
+  /Registered_users/{cid}:
+    parameters:
+      - name: cid
+        in: path
+        required: true
+        type: integer
+        format: int64
+        
+        
+        
+        Gets `Person` objects.
+        Optional query param of **size** determines
+        size of returned array
+      # This is array of GET operation parameters:
+      parameters:
+        # An example parameter that is in query and is required
+        -
+          name: size
+          in: query
+          description: Size of array
+          required: true
+          type: number
+          format: double
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+          # A schema describing your response object.
+          # Use JSON Schema format
+          schema:
+            title: ArrayOfPersons
+            type: array
+            items:
+              title: Person
+              type: object
+              properties:
+                name:
+                  type: string
+                single:
+                  type: boolean
