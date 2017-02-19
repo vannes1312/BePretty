@@ -1,42 +1,59 @@
-# Example YAML to get you started quickly.
-# Be aware that YAML has indentation based scoping.
-# Code completion support is available so start typing for available options.
 swagger: '2.0'
-
-# This is your document metadata
 info:
-  version: "0.0.1"
-  title: <BePretty>
-  description: Book an appointment in 1'!
-# termsOfService:  
-  contact:
-    name: BePretty Team
-    email: bepretty@gmail.com
-    url: http://bepretty.com
-  # licence:
-    # name:
-    # url:
-# host:
-# basePath: /api
+  version: 0.0.1
+  title: BePretty
+  description: Book a beayty appointment in 1'!
+  
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /vannes1312/BePretty/0.0.1
+
 # schemes:
-#  - http
+#   - http
+#   - https
 consumes: 
   - application/json
 produces:
   - application/json
 
 definitions:
+  
   customer:
     type: object
     required:
-      - id
-      - name
+      - customerid
+      - firstName
+      - lastName
+      - dateOfBirth
+      - defaultPaymentType
+      - address
+      - email
+      - mobile
     properties:
-      id:
+      customerid:
         type: integer
         format: int64
-      name:
+      firstName:
         type: string
+      lastName:
+        type: string
+      dateOfBirth:
+        type: string
+      defaultPaymentType:
+        type: string
+      address:
+        type: string
+      email:
+        type: string
+      mobile:
+        type: integer
+        format: int64
+        
+  customers:
+    type: array
+    items:
+      $ref: "#/definitions/customer"
+  
   newCustomer:
     type: object
     required:
@@ -44,42 +61,136 @@ definitions:
     properties:
       name:
         type: string
+  
+#  guest:
+#    type: object
+#    required:
+#      - paymentInfo
+#      - firstName
+#      - lastName
+#      - billingAddress
+#      - email
+#      - mobile
+#    properties:
+#      paymentInfo:
+#        type: string
+#      firstName:
+#        type: string
+#      lastName:
+#        type: string
+#      billingAddress:
+#        type: string
+#      email:
+#        type: string
+#      mobile:
+#        type: string
+        
+  professional:
+    type: object
+    required:
+      - pid
+      - professionalName
+      - firstName
+      - lastName
+      - dateOfBirth
+      - vatNumber
+      - paymentInfo
+      - address
+      - email
+      - telephone
+      - mobile
+      - catalogue
+      - timetable
+    properties:
+      pid:
+        type: integer
+        format: int64
+      professionalName:
+        type: string
+      firstName:
+        type: string
+      lastName:
+        type: string
+      dateOfBirth:
+        type: string
+      vatNumber:
+        type: integer
+      paymentInfo:
+        type: string
+      address:
+        type: string
+      email:
+        type: string
+      telephone:
+        type: integer
+      mobile:
+        type: integer
+      catalogue:
+        type: array
+        items:
+          $ref: "#/definitions/product" 
+        properties:
+          servicesProvided:
+            type: string
+      timetable:
+        type: string
+        
+  professionals:
+    type: array
+    items:
+      $ref: "#/definitions/professional"
+        
+  newProfessional:
+    type: object
+    required:
+      - name
+    properties:
+      name:
+        type: string
+        
   product:
     type: object
     required:
-      - id
+      - pid
       - name
-      - professional
+      - productid
       - price
     properties:
-      id:
+      pid:
         type: integer
         format: int64
       name:
         type: string
-      professional:
-        type: string
+      productid:
+        type: integer
       price:
         type: number
         format: float
+        
+  products:
+    type: array
+    items:
+      $ref: "#/definitions/product"
+        
   newProduct:
     type: object
     required:
       - name
-      - professional
+      - pid
       - price
     properties:
       name:
         type: string
-      professional:
-        type: string
+      pid:
+        type: integer
       price: 
         type: number
         format: float
+        
   order:
     type: object
     properties:
-      id:
+      orderid:
         type: integer
         format: int64
       qty: 
@@ -92,63 +203,778 @@ definitions:
         type: number
         format: float
         
-# Describe your paths here
+  orders:
+    type: array
+    items:
+      $ref: "#/definitions/order"
+      
+  newOrder:
+    type: object
+    properties:
+      orderid:
+        type: integer
+      finalPrice: 
+        type: number
+        format: float
+      qty: 
+        type: integer
+        
+  orderDetail:
+    type: object
+    required:
+      - orderid
+      - productid
+      - qty
+    properties:
+      orderid:
+        type: integer
+      productid:
+        type: integer
+      productName:
+        type: string
+      qty:
+        type: integer
+      unitCost:
+        type: number
+      subTotal:
+        type: number
+        format: float
+        
+  appointment:
+    type: object
+    properties:
+      appointmentid:
+        type: integer
+        format: int64
+      date-time: 
+        type: string
+        format: date-time
+      customer:
+        $ref: '#/definitions/customer'
+      service:
+        $ref: '#/definitions/service'
+      finalPrice:
+        type: number
+        format: float
+        
+  appointments:
+    type: array
+    items:
+      $ref: "#/definitions/appointment"
+        
+  newAppointment:
+    type: object
+    required:
+      - name
+      - appointmentid
+      - price
+    properties:
+      name:
+        type: string
+      appointmentid:
+        type: integer
+      price: 
+        type: number
+        format: float
+        
+  service:
+    type: object
+    required:
+      - serviceid
+      - name
+      - finalPrice
+    properties:
+      serviceid:
+        type: integer
+        format: int64
+      name:
+        type: string
+      finalPrice:
+        type: number
+        format: float
+        
+  services:
+    type: array
+    items:
+      $ref: "#/definitions/service"
+      
+  newService:
+    type: object
+    required:
+      - name
+      - pid
+      - price
+    properties:
+      name:
+        type: string
+      pid:
+        type: integer
+      price: 
+        type: number
+        format: float
+      
+
 paths:
-  # This is a path endpoint. Change it.
-  /guests:
-    # This is a HTTP operation
-    post:
-      # Describe this verb here. Note: you can use markdown
-      description: Create a new Registered_user
-      operationId: addRegistered_user
+
+  
+  /customers:
+    
+    get:
+      description: Gets all the customers
       parameters:
-        - name: Registered_user
+        - name: _sort
+          in: query
+          required: false
+          type: string
+        - name: _order
+          in: query
+          required: false
+          type: string
+      responses:
+        200:
+          description: Customers succesfully retrieved
+          schema:
+            $ref: '#/definitions/customers'
+    
+    post:
+      description: Create a new customer
+      operationId: addCustomer
+      parameters:
+        - name: customer
           in: body
           required: true
-          description: Guest to be added as a Registered User
+          description: Guest to be added as a Customer
           schema:
-            $ref: '#/definitions/newRegistered_user
+            $ref: '#/definitions/customer'
       responses:
-        201:
-          description: User is now registered
-  /Registered_users/{cid}:
+        200:
+          description: User is now registered as a customer
+
+  
+  /customers/{customerid}:
+    
     parameters:
-      - name: cid
+      - name: customerid
+        in: path
+        required: true
+        type: integer
+        format: int64
+    
+    get:
+      description: Get a customer with *customerid*
+      responses:
+        200:
+          description: Customer succesfully retrieved
+          schema:
+            $ref: '#/definitions/customer'
+        404:
+          description: Customer not found
+    
+    delete:
+      description: Delete a customer with *customerid*
+      responses:
+        200:
+          description: Customer deleted 
+          schema:
+            $ref: '#/definitions/customer'
+        404:
+          description: Customer not found
+    
+    put:
+      description: Update a customer with *customerid*
+      operationId: updateCustomer
+      parameters:
+        - name: customer
+          in: body
+          required: true
+          description: Updates customer
+          schema:
+            $ref: '#/definitions/newCustomer'
+      responses:
+        200:
+          description: Customer updated
+          schema:
+            $ref: '#/definitions/customer'
+        404:
+          description: Customer not found
+          
+  
+  /customers/{customerid}/appointments:
+  
+    parameters:
+      - name: customerid
         in: path
         required: true
         type: integer
         format: int64
         
-        
-        
-        Gets `Person` objects.
-        Optional query param of **size** determines
-        size of returned array
-      # This is array of GET operation parameters:
+    get:
+      description: Gets all the appointments of a customer
       parameters:
-        # An example parameter that is in query and is required
-        -
-          name: size
+        - name: customer
           in: query
-          description: Size of array
           required: true
-          type: number
-          format: double
-      # Expected responses for this operation:
+          type: string
+        - name: service
+          in: query
+          required: false
+          type: string
       responses:
-        # Response code
         200:
-          description: Successful response
-          # A schema describing your response object.
-          # Use JSON Schema format
+          description: Appointments succesfully retrieved
           schema:
-            title: ArrayOfPersons
+            $ref: '#/definitions/appointments'
+        404:
+          description: Appointments not found
+              
+    post:
+      description: Create a new appointment
+      operationId: addAppointment
+      parameters:
+        - name: service
+          in: body
+          required: true
+          description: Selected service for the appointment
+          schema:
+            $ref: '#/definitions/newAppointment'
+      responses:
+        200:
+          description: Appointment successfully created
+  
+  
+  /customers/{customerid}/appointments/{appointmentid}:
+    
+    parameters:
+      - name: customerid
+        in: path
+        required: true
+        type: integer
+        format: int64
+      - name: appointmentid
+        in: path
+        required: true
+        type: integer
+        format: int64
+        
+    get:
+      description: Get an appointment with *appointmentid*
+      responses:
+        200:
+          description: Appointment succesfully retrieved
+          schema:
+            $ref: '#/definitions/appointment'
+        404:
+          description: Appointment not found
+    
+    delete:
+      description: Delete an appointment with *appointmentid*
+      responses:
+        200:
+          description: Appointment deleted 
+          schema:
+            $ref: '#/definitions/appointment'
+        404:
+          description: Appointment not found
+    
+    put:
+      description: Update an appointment with *appointmentid*
+      operationId: updateAppointmentAsCustomer
+      parameters:
+        - name: appointment
+          in: body
+          required: true
+          description: Updates appointment
+          schema:
+            $ref: '#/definitions/newAppointment'
+      responses:
+        200:
+          description: Appointment updated
+          schema:
+            $ref: '#/definitions/appointment'
+        404:
+          description: Appointment not found
+          
+  /customers/{customerid}/orders:
+    
+    parameters:
+      - name: customerid
+        in: path
+        required: true
+        type: integer
+        format: int64
+        
+    get:
+      description: Gets all the orders
+      parameters:
+        - in: query
+          name: _expand
+          description: Expand to customers
+          required: false
+          type: string
+      responses:
+        200:
+          description: Orders succesfully retrieved
+          schema:
+            $ref: '#/definitions/orders'
+        404:
+          description: Order not found
+          
+    post:
+      description: Create a new order
+      operationId: addOrder
+      parameters:
+        - name: product
+          in: body
+          required: true
+          description: Product to be added in the order
+          schema:
+            $ref: '#/definitions/newOrder'
+      responses:
+        200:
+          description: Order successfully created
+          
+  
+  /customers/{customerid}/orders/{orderid}:
+    
+    parameters:
+      - name: customerid
+        in: path
+        required: true
+        type: integer
+        format: int64
+      - name: orderid
+        in: path
+        required: true
+        type: integer
+        format: int64
+    
+    get:
+      description: Get an order with *orderid*
+      responses:
+        200:
+          description: Order succesfully retrieved
+          schema:
+            $ref: '#/definitions/order'
+        404:
+          description: Order not found
+    
+    delete:
+      description: Delete an order with *orderid*
+      responses:
+        200:
+          description: Order deleted 
+          schema:
+            $ref: '#/definitions/order'
+        404:
+          description: Order not found
+    
+    put:
+      description: Update an order with *orderid*
+      operationId: updateOrder
+      parameters:
+        - name: order
+          in: body
+          required: true
+          description: Updates order
+          schema:
+            $ref: '#/definitions/newOrder'
+      responses:
+        200:
+          description: Order updated
+          schema:
+            $ref: '#/definitions/order'
+        404:
+          description: Order not found
+          
+# --------------------------------------------------------------------
+  /customers/{customerid}/orders/{orderid}/details:
+    
+    parameters:
+      - name: customerid
+        in: path
+        required: true
+        type: integer
+        format: int64
+      - name: orderid
+        in: path
+        required: true
+        type: integer
+        format: int64
+        
+    get:
+      description: Gets the details of an order with *orderid*
+      responses:
+        200:
+          description: Details succesfully retrieved
+          schema:
+            $ref: '#/definitions/orderDetail'
+        404:
+          description: Professional not found
+          
+# --------------------------------------------------------------------
+  /customers/{customerid}/shoppingCart:
+  
+    parameters:
+      - name: customerid
+        in: path
+        required: true
+        type: integer
+        format: int64
+  
+    
+    get:
+      description: Gets the details of the customers shopping cart
+      responses:
+        200:
+          description: Shopping cart successfully retrieved
+          schema:
+            type: object
+            required:
+              - customerid
+              - productid
+              - qty
+            properties:
+              customerid:
+                type: integer
+                format: int64
+              productid:
+                type: integer
+              qty:
+                type: number
+                format: float
+  
+
+  /professionals:
+    
+    get:
+      description: Gets all the professionals
+      parameters:
+        - name: _sort
+          in: query
+          required: false
+          type: string
+        - name: _order
+          in: query
+          required: false
+          type: string
+        - name: _address
+          in: query
+          required: false
+          type: string
+        
+      responses:
+        200:
+          description: Professionals succesfully retrieved
+          schema:
             type: array
             items:
-              title: Person
-              type: object
-              properties:
-                name:
-                  type: string
-                single:
-                  type: boolean
+              $ref: '#/definitions/professionals'
+    
+    post:
+      description: Guest wants to become a professional
+      operationId: addProfessional
+      parameters:
+        - name: professional
+          in: body
+          required: true
+          description: Guest to be added as a professional
+          schema:
+            $ref: '#/definitions/professional'
+      responses:
+        200:
+          description: User is now registered as a professional
+
+
+  /professionals/{pid}:
+    
+    parameters:
+      - name: pid
+        in: path
+        required: true
+        type: integer
+        format: int64
+    
+    get:
+      description: Get a professional with *pid*
+      responses:
+        200:
+          description: Professional succesfully retrieved
+          schema:
+            $ref: "#/definitions/professional"
+        404:
+          description: Professional not found
+    
+    delete:
+      description: Delete a professional with *pid*
+      responses:
+        200:
+          description: Professional deleted 
+          schema:
+            $ref: "#/definitions/professional"
+        404:
+          description: Professional not found
+    
+    put:
+      description: Update a professional with *pid*
+      operationId: updateProfessional
+      parameters:
+        - name: professional
+          in: body
+          required: true
+          description: Updates
+          schema:
+            $ref: '#/definitions/newProfessional'
+      responses:
+        200:
+          description: Professional updated
+          schema:
+            $ref: '#/definitions/professional'
+        404:
+          description: Professional not found
+          
+          
+  /professionals/{pid}/services:
+    
+    parameters:
+      - name: pid
+        in: path
+        required: true
+        type: integer
+        format: int64
+    
+    get:
+      description: Get available services from a professional with *pid*
+      responses:
+        200:
+          description: Services succesfully retrieved
+          schema:
+            $ref: "#/definitions/services"
+        404:
+          description: No service available
+          
+    post:
+      description: Add a new service
+      operationId: addService
+      parameters:
+        - name: service
+          in: body
+          required: true
+          description: Service to add to the eshop
+          schema:
+            $ref: '#/definitions/newService'
+      responses:
+        200:
+          description: Service created
+          
+  /professionals/{pid}/services/{serviceid}:
+    
+    parameters:
+      - name: pid
+        in: path
+        required: true
+        type: integer
+        format: int64
+      - name: serviceid
+        in: path
+        required: true
+        type: integer
+        format: int64
+        
+    delete:
+      description: Delete a service with *serviceid*
+      responses:
+        200:
+          description: Service deleted
+          schema:
+            $ref: "#/definitions/service"
+        404:
+          description: Service not found
+    
+    put:
+      description: Update a service with *serviceid*
+      operationId: updateService
+      parameters:
+        - name: service
+          in: body
+          required: true
+          description: Updates service
+          schema:
+            $ref: '#/definitions/newService'
+      responses:
+        200:
+          description: Service updated
+          schema:
+            $ref: '#/definitions/service'
+        404:
+          description: Service not found
+          
+  /professionals/{pid}/appointments:
+  
+    parameters:
+      - name: pid
+        in: path
+        required: true
+        type: integer
+        format: int64
+        
+    get:
+      description: Gets all the appointments
+      parameters:
+        - name: professional
+          in: query
+          required: true
+          type: string
+        - name: service
+          in: query
+          required: false
+          type: string
+      responses:
+        200:
+          description: Appointments succesfully retrieved
+          schema:
+            $ref: '#/definitions/appointments'
+        404:
+          description: Appointments not found
+          
+  /professionals/{pid}/appointments/{appointmentid}:
+    
+    parameters:
+      - name: pid
+        in: path
+        required: true
+        type: integer
+        format: int64
+      - name: appointmentid
+        in: path
+        required: true
+        type: integer
+        format: int64
+        
+    get:
+      description: Get an appointment with *appointmentid*
+      responses:
+        200:
+          description: Appointment succesfully retrieved
+          schema:
+            $ref: '#/definitions/appointment'
+        404:
+          description: Appointment not found
+    
+    delete:
+      description: Delete an appointment with *appointmentid*
+      responses:
+        200:
+          description: Appointment deleted 
+          schema:
+            $ref: '#/definitions/appointment'
+        404:
+          description: Appointment not found
+    
+    put:
+      description: Update an appointment with *appointmentid*
+      operationId: updateAppointmentAsProfessional
+      parameters:
+        - name: appointment
+          in: body
+          required: true
+          description: Updates appointment
+          schema:
+            $ref: '#/definitions/newAppointment'
+      responses:
+        200:
+          description: Appointment updated
+          schema:
+            $ref: '#/definitions/appointment'
+        404:
+          description: Appointment not found
+
+  /products:
+  
+    get:
+      description: Gets all the products
+      parameters:
+        - name: manufacturer
+          in: query
+          required: false
+          type: string
+        - name: name
+          in: query
+          required: false
+          type: string
+      responses:
+        200:
+          description: Products succesfully retrieved
+          schema:
+            $ref: "#/definitions/products"
+    post:
+      description: Create a new product
+      operationId: addProduct
+      parameters:
+        - name: product
+          in: body
+          required: true
+          description: Product to add to the eshop
+          schema:
+            $ref: '#/definitions/newProduct'
+      responses:
+        201:
+          description: Product created
+  
+  
+  /products/{productid}:
+    
+    parameters:
+      - name: productid
+        in: path
+        required: true
+        type: integer
+        format: int64
+    
+    get:
+      description: Get a product with *productid*
+      responses:
+        200:
+          description: Product succesfully retrieved
+          schema:
+            $ref: '#/definitions/product'
+        404:
+          description: Product not found
+    
+    delete:
+      description: Delete a product with *productid*
+      responses:
+        200:
+          description: Product deleted 
+          schema:
+            $ref: '#/definitions/product'
+        404:
+          description: Product not found
+    
+    put:
+      description: Update a product with *productid*
+      operationId: updateProduct
+      parameters:
+        - name: product
+          in: body
+          required: true
+          description: Updates
+          schema:
+            $ref: '#/definitions/newProduct'
+      responses:
+        200:
+          description: Product updated
+          schema:
+            $ref: '#/definitions/product'
+        404:
+          description: Product not found
+
+
+  
+          
+
+  
+  
+# Added by API Auto Mocking Plugin
+schemes:
+ - https
+ - http
